@@ -1,0 +1,1142 @@
+[
+ {
+  "adm0": "AFG",
+  "country": "Afghanistan",
+  "region_count": 34
+ },
+ {
+  "adm0": "ALD",
+  "country": "Aland",
+  "region_count": 1
+ },
+ {
+  "adm0": "ALB",
+  "country": "Albania",
+  "region_count": 12
+ },
+ {
+  "adm0": "DZA",
+  "country": "Algeria",
+  "region_count": 48
+ },
+ {
+  "adm0": "ASM",
+  "country": "American Samoa",
+  "region_count": 2
+ },
+ {
+  "adm0": "AND",
+  "country": "Andorra",
+  "region_count": 7
+ },
+ {
+  "adm0": "AGO",
+  "country": "Angola",
+  "region_count": 18
+ },
+ {
+  "adm0": "AIA",
+  "country": "Anguilla",
+  "region_count": 12
+ },
+ {
+  "adm0": "ATA",
+  "country": "Antarctica",
+  "region_count": 2
+ },
+ {
+  "adm0": "ATG",
+  "country": "Antigua and Barbuda",
+  "region_count": 7
+ },
+ {
+  "adm0": "ARG",
+  "country": "Argentina",
+  "region_count": 24
+ },
+ {
+  "adm0": "ARM",
+  "country": "Armenia",
+  "region_count": 11
+ },
+ {
+  "adm0": "ABW",
+  "country": "Aruba",
+  "region_count": 1
+ },
+ {
+  "adm0": "AUS",
+  "country": "Australia",
+  "region_count": 8
+ },
+ {
+  "adm0": "AUT",
+  "country": "Austria",
+  "region_count": 9
+ },
+ {
+  "adm0": "AZE",
+  "country": "Azerbaijan",
+  "region_count": 71
+ },
+ {
+  "adm0": "BHR",
+  "country": "Bahrain",
+  "region_count": 3
+ },
+ {
+  "adm0": "BGD",
+  "country": "Bangladesh",
+  "region_count": 7
+ },
+ {
+  "adm0": "BRB",
+  "country": "Barbados",
+  "region_count": 10
+ },
+ {
+  "adm0": "KAB",
+  "country": "Baykonur Cosmodrome",
+  "region_count": 1
+ },
+ {
+  "adm0": "BLR",
+  "country": "Belarus",
+  "region_count": 7
+ },
+ {
+  "adm0": "BEL",
+  "country": "Belgium",
+  "region_count": 11
+ },
+ {
+  "adm0": "BLZ",
+  "country": "Belize",
+  "region_count": 6
+ },
+ {
+  "adm0": "BEN",
+  "country": "Benin",
+  "region_count": 12
+ },
+ {
+  "adm0": "BMU",
+  "country": "Bermuda",
+  "region_count": 8
+ },
+ {
+  "adm0": "BTN",
+  "country": "Bhutan",
+  "region_count": 20
+ },
+ {
+  "adm0": "BOL",
+  "country": "Bolivia",
+  "region_count": 9
+ },
+ {
+  "adm0": "BIH",
+  "country": "Bosnia and Herzegovina",
+  "region_count": 18
+ },
+ {
+  "adm0": "BWA",
+  "country": "Botswana",
+  "region_count": 12
+ },
+ {
+  "adm0": "BRA",
+  "country": "Brazil",
+  "region_count": 27
+ },
+ {
+  "adm0": "BRN",
+  "country": "Brunei",
+  "region_count": 4
+ },
+ {
+  "adm0": "BGR",
+  "country": "Bulgaria",
+  "region_count": 28
+ },
+ {
+  "adm0": "BFA",
+  "country": "Burkina Faso",
+  "region_count": 45
+ },
+ {
+  "adm0": "BDI",
+  "country": "Burundi",
+  "region_count": 17
+ },
+ {
+  "adm0": "KHM",
+  "country": "Cambodia",
+  "region_count": 23
+ },
+ {
+  "adm0": "CMR",
+  "country": "Cameroon",
+  "region_count": 10
+ },
+ {
+  "adm0": "CAN",
+  "country": "Canada",
+  "region_count": 13
+ },
+ {
+  "adm0": "CPV",
+  "country": "Cape Verde",
+  "region_count": 19
+ },
+ {
+  "adm0": "CYM",
+  "country": "Cayman Islands",
+  "region_count": 1
+ },
+ {
+  "adm0": "CAF",
+  "country": "Central African Republic",
+  "region_count": 17
+ },
+ {
+  "adm0": "TCD",
+  "country": "Chad",
+  "region_count": 22
+ },
+ {
+  "adm0": "CHL",
+  "country": "Chile",
+  "region_count": 16
+ },
+ {
+  "adm0": "CHN",
+  "country": "China",
+  "region_count": 31
+ },
+ {
+  "adm0": "COL",
+  "country": "Colombia",
+  "region_count": 32
+ },
+ {
+  "adm0": "COM",
+  "country": "Comoros",
+  "region_count": 3
+ },
+ {
+  "adm0": "CRI",
+  "country": "Costa Rica",
+  "region_count": 7
+ },
+ {
+  "adm0": "HRV",
+  "country": "Croatia",
+  "region_count": 21
+ },
+ {
+  "adm0": "CUB",
+  "country": "Cuba",
+  "region_count": 16
+ },
+ {
+  "adm0": "CUW",
+  "country": "Curaçao",
+  "region_count": 1
+ },
+ {
+  "adm0": "CYP",
+  "country": "Cyprus",
+  "region_count": 5
+ },
+ {
+  "adm0": "CZE",
+  "country": "Czech Republic",
+  "region_count": 14
+ },
+ {
+  "adm0": "COD",
+  "country": "Democratic Republic of the Congo",
+  "region_count": 11
+ },
+ {
+  "adm0": "DNK",
+  "country": "Denmark",
+  "region_count": 5
+ },
+ {
+  "adm0": "ESB",
+  "country": "Dhekelia Sovereign Base Area",
+  "region_count": 1
+ },
+ {
+  "adm0": "DJI",
+  "country": "Djibouti",
+  "region_count": 5
+ },
+ {
+  "adm0": "DMA",
+  "country": "Dominica",
+  "region_count": 10
+ },
+ {
+  "adm0": "DOM",
+  "country": "Dominican Republic",
+  "region_count": 32
+ },
+ {
+  "adm0": "TLS",
+  "country": "East Timor",
+  "region_count": 13
+ },
+ {
+  "adm0": "ECU",
+  "country": "Ecuador",
+  "region_count": 24
+ },
+ {
+  "adm0": "EGY",
+  "country": "Egypt",
+  "region_count": 26
+ },
+ {
+  "adm0": "SLV",
+  "country": "El Salvador",
+  "region_count": 14
+ },
+ {
+  "adm0": "GNQ",
+  "country": "Equatorial Guinea",
+  "region_count": 6
+ },
+ {
+  "adm0": "ERI",
+  "country": "Eritrea",
+  "region_count": 6
+ },
+ {
+  "adm0": "EST",
+  "country": "Estonia",
+  "region_count": 15
+ },
+ {
+  "adm0": "ETH",
+  "country": "Ethiopia",
+  "region_count": 11
+ },
+ {
+  "adm0": "FLK",
+  "country": "Falkland Islands",
+  "region_count": 1
+ },
+ {
+  "adm0": "FRO",
+  "country": "Faroe Islands",
+  "region_count": 1
+ },
+ {
+  "adm0": "FSM",
+  "country": "Federated States of Micronesia",
+  "region_count": 1
+ },
+ {
+  "adm0": "FJI",
+  "country": "Fiji",
+  "region_count": 4
+ },
+ {
+  "adm0": "FIN",
+  "country": "Finland",
+  "region_count": 18
+ },
+ {
+  "adm0": "FRA",
+  "country": "France",
+  "region_count": 101
+ },
+ {
+  "adm0": "PYF",
+  "country": "French Polynesia",
+  "region_count": 4
+ },
+ {
+  "adm0": "ATF",
+  "country": "French Southern and Antarctic Lands",
+  "region_count": 1
+ },
+ {
+  "adm0": "GAB",
+  "country": "Gabon",
+  "region_count": 9
+ },
+ {
+  "adm0": "GMB",
+  "country": "Gambia",
+  "region_count": 6
+ },
+ {
+  "adm0": "PSX",
+  "country": "Gaza Strip",
+  "region_count": 2
+ },
+ {
+  "adm0": "GEO",
+  "country": "Georgia",
+  "region_count": 12
+ },
+ {
+  "adm0": "DEU",
+  "country": "Germany",
+  "region_count": 16
+ },
+ {
+  "adm0": "GHA",
+  "country": "Ghana",
+  "region_count": 10
+ },
+ {
+  "adm0": "GRC",
+  "country": "Greece",
+  "region_count": 14
+ },
+ {
+  "adm0": "GRL",
+  "country": "Greenland",
+  "region_count": 6
+ },
+ {
+  "adm0": "GRD",
+  "country": "Grenada",
+  "region_count": 6
+ },
+ {
+  "adm0": "GUM",
+  "country": "Guam",
+  "region_count": 1
+ },
+ {
+  "adm0": "GTM",
+  "country": "Guatemala",
+  "region_count": 22
+ },
+ {
+  "adm0": "GIN",
+  "country": "Guinea",
+  "region_count": 34
+ },
+ {
+  "adm0": "GNB",
+  "country": "Guinea Bissau",
+  "region_count": 9
+ },
+ {
+  "adm0": "GUY",
+  "country": "Guyana",
+  "region_count": 10
+ },
+ {
+  "adm0": "HTI",
+  "country": "Haiti",
+  "region_count": 10
+ },
+ {
+  "adm0": "HMD",
+  "country": "Heard Island and McDonald Islands",
+  "region_count": 1
+ },
+ {
+  "adm0": "HND",
+  "country": "Honduras",
+  "region_count": 17
+ },
+ {
+  "adm0": "HKG",
+  "country": "Hong Kong S.A.R.",
+  "region_count": 18
+ },
+ {
+  "adm0": "HUN",
+  "country": "Hungary",
+  "region_count": 41
+ },
+ {
+  "adm0": "ISL",
+  "country": "Iceland",
+  "region_count": 9
+ },
+ {
+  "adm0": "IND",
+  "country": "India",
+  "region_count": 35
+ },
+ {
+  "adm0": "IOA",
+  "country": "Indian Ocean Territories",
+  "region_count": 1
+ },
+ {
+  "adm0": "IDN",
+  "country": "Indonesia",
+  "region_count": 33
+ },
+ {
+  "adm0": "IRN",
+  "country": "Iran",
+  "region_count": 31
+ },
+ {
+  "adm0": "IRQ",
+  "country": "Iraq",
+  "region_count": 18
+ },
+ {
+  "adm0": "IRL",
+  "country": "Ireland",
+  "region_count": 31
+ },
+ {
+  "adm0": "IMN",
+  "country": "Isle of Man",
+  "region_count": 1
+ },
+ {
+  "adm0": "ISR",
+  "country": "Israel",
+  "region_count": 6
+ },
+ {
+  "adm0": "ITA",
+  "country": "Italy",
+  "region_count": 110
+ },
+ {
+  "adm0": "CIV",
+  "country": "Ivory Coast",
+  "region_count": 19
+ },
+ {
+  "adm0": "JAM",
+  "country": "Jamaica",
+  "region_count": 13
+ },
+ {
+  "adm0": "JPN",
+  "country": "Japan",
+  "region_count": 47
+ },
+ {
+  "adm0": "JEY",
+  "country": "Jersey",
+  "region_count": 1
+ },
+ {
+  "adm0": "JOR",
+  "country": "Jordan",
+  "region_count": 12
+ },
+ {
+  "adm0": "KAZ",
+  "country": "Kazakhstan",
+  "region_count": 16
+ },
+ {
+  "adm0": "KEN",
+  "country": "Kenya",
+  "region_count": 8
+ },
+ {
+  "adm0": "KIR",
+  "country": "Kiribati",
+  "region_count": 1
+ },
+ {
+  "adm0": "KOS",
+  "country": "Kosovo",
+  "region_count": 30
+ },
+ {
+  "adm0": "KWT",
+  "country": "Kuwait",
+  "region_count": 6
+ },
+ {
+  "adm0": "KGZ",
+  "country": "Kyrgyzstan",
+  "region_count": 8
+ },
+ {
+  "adm0": "LAO",
+  "country": "Laos",
+  "region_count": 17
+ },
+ {
+  "adm0": "LVA",
+  "country": "Latvia",
+  "region_count": 115
+ },
+ {
+  "adm0": "LBN",
+  "country": "Lebanon",
+  "region_count": 5
+ },
+ {
+  "adm0": "LSO",
+  "country": "Lesotho",
+  "region_count": 10
+ },
+ {
+  "adm0": "LBR",
+  "country": "Liberia",
+  "region_count": 15
+ },
+ {
+  "adm0": "LBY",
+  "country": "Libya",
+  "region_count": 22
+ },
+ {
+  "adm0": "LIE",
+  "country": "Liechtenstein",
+  "region_count": 11
+ },
+ {
+  "adm0": "LTU",
+  "country": "Lithuania",
+  "region_count": 10
+ },
+ {
+  "adm0": "LUX",
+  "country": "Luxembourg",
+  "region_count": 3
+ },
+ {
+  "adm0": "MKD",
+  "country": "Macedonia",
+  "region_count": 83
+ },
+ {
+  "adm0": "MDG",
+  "country": "Madagascar",
+  "region_count": 22
+ },
+ {
+  "adm0": "MWI",
+  "country": "Malawi",
+  "region_count": 27
+ },
+ {
+  "adm0": "MYS",
+  "country": "Malaysia",
+  "region_count": 14
+ },
+ {
+  "adm0": "MLI",
+  "country": "Mali",
+  "region_count": 8
+ },
+ {
+  "adm0": "MLT",
+  "country": "Malta",
+  "region_count": 68
+ },
+ {
+  "adm0": "MRT",
+  "country": "Mauritania",
+  "region_count": 13
+ },
+ {
+  "adm0": "MUS",
+  "country": "Mauritius",
+  "region_count": 13
+ },
+ {
+  "adm0": "MEX",
+  "country": "Mexico",
+  "region_count": 32
+ },
+ {
+  "adm0": "MDA",
+  "country": "Moldova",
+  "region_count": 39
+ },
+ {
+  "adm0": "MNG",
+  "country": "Mongolia",
+  "region_count": 22
+ },
+ {
+  "adm0": "MNE",
+  "country": "Montenegro",
+  "region_count": 21
+ },
+ {
+  "adm0": "MSR",
+  "country": "Montserrat",
+  "region_count": 3
+ },
+ {
+  "adm0": "MAR",
+  "country": "Morocco",
+  "region_count": 16
+ },
+ {
+  "adm0": "MOZ",
+  "country": "Mozambique",
+  "region_count": 10
+ },
+ {
+  "adm0": "MMR",
+  "country": "Myanmar",
+  "region_count": 14
+ },
+ {
+  "adm0": "NAM",
+  "country": "Namibia",
+  "region_count": 13
+ },
+ {
+  "adm0": "NRU",
+  "country": "Nauru",
+  "region_count": 14
+ },
+ {
+  "adm0": "NPL",
+  "country": "Nepal",
+  "region_count": 14
+ },
+ {
+  "adm0": "NLD",
+  "country": "Netherlands",
+  "region_count": 13
+ },
+ {
+  "adm0": "NCL",
+  "country": "New Caledonia",
+  "region_count": 3
+ },
+ {
+  "adm0": "NZL",
+  "country": "New Zealand",
+  "region_count": 18
+ },
+ {
+  "adm0": "NIC",
+  "country": "Nicaragua",
+  "region_count": 17
+ },
+ {
+  "adm0": "NER",
+  "country": "Niger",
+  "region_count": 8
+ },
+ {
+  "adm0": "NGA",
+  "country": "Nigeria",
+  "region_count": 37
+ },
+ {
+  "adm0": "NIU",
+  "country": "Niue",
+  "region_count": 1
+ },
+ {
+  "adm0": "PRK",
+  "country": "North Korea",
+  "region_count": 11
+ },
+ {
+  "adm0": "CYN",
+  "country": "Northern Cyprus",
+  "region_count": 1
+ },
+ {
+  "adm0": "MNP",
+  "country": "Northern Mariana Islands",
+  "region_count": 1
+ },
+ {
+  "adm0": "NOR",
+  "country": "Norway",
+  "region_count": 20
+ },
+ {
+  "adm0": "OMN",
+  "country": "Oman",
+  "region_count": 11
+ },
+ {
+  "adm0": "PAK",
+  "country": "Pakistan",
+  "region_count": 8
+ },
+ {
+  "adm0": "PLW",
+  "country": "Palau",
+  "region_count": 9
+ },
+ {
+  "adm0": "PAN",
+  "country": "Panama",
+  "region_count": 12
+ },
+ {
+  "adm0": "PNG",
+  "country": "Papua New Guinea",
+  "region_count": 20
+ },
+ {
+  "adm0": "PRY",
+  "country": "Paraguay",
+  "region_count": 18
+ },
+ {
+  "adm0": "PER",
+  "country": "Peru",
+  "region_count": 25
+ },
+ {
+  "adm0": "PHL",
+  "country": "Philippines",
+  "region_count": 114
+ },
+ {
+  "adm0": "POL",
+  "country": "Poland",
+  "region_count": 16
+ },
+ {
+  "adm0": "PRT",
+  "country": "Portugal",
+  "region_count": 20
+ },
+ {
+  "adm0": "PRI",
+  "country": "Puerto Rico",
+  "region_count": 1
+ },
+ {
+  "adm0": "QAT",
+  "country": "Qatar",
+  "region_count": 7
+ },
+ {
+  "adm0": "SRB",
+  "country": "Republic of Serbia",
+  "region_count": 25
+ },
+ {
+  "adm0": "COG",
+  "country": "Republic of the Congo",
+  "region_count": 11
+ },
+ {
+  "adm0": "ROU",
+  "country": "Romania",
+  "region_count": 42
+ },
+ {
+  "adm0": "RUS",
+  "country": "Russia",
+  "region_count": 85
+ },
+ {
+  "adm0": "RWA",
+  "country": "Rwanda",
+  "region_count": 5
+ },
+ {
+  "adm0": "SDS",
+  "country": "S. Sudan",
+  "region_count": 10
+ },
+ {
+  "adm0": "SHN",
+  "country": "Saint Helena",
+  "region_count": 2
+ },
+ {
+  "adm0": "KNA",
+  "country": "Saint Kitts and Nevis",
+  "region_count": 14
+ },
+ {
+  "adm0": "LCA",
+  "country": "Saint Lucia",
+  "region_count": 11
+ },
+ {
+  "adm0": "MAF",
+  "country": "Saint Martin",
+  "region_count": 1
+ },
+ {
+  "adm0": "SPM",
+  "country": "Saint Pierre and Miquelon",
+  "region_count": 1
+ },
+ {
+  "adm0": "VCT",
+  "country": "Saint Vincent and the Grenadines",
+  "region_count": 5
+ },
+ {
+  "adm0": "WSM",
+  "country": "Samoa",
+  "region_count": 10
+ },
+ {
+  "adm0": "SMR",
+  "country": "San Marino",
+  "region_count": 9
+ },
+ {
+  "adm0": "STP",
+  "country": "Sao Tome and Principe",
+  "region_count": 1
+ },
+ {
+  "adm0": "SAU",
+  "country": "Saudi Arabia",
+  "region_count": 13
+ },
+ {
+  "adm0": "SEN",
+  "country": "Senegal",
+  "region_count": 14
+ },
+ {
+  "adm0": "SYC",
+  "country": "Seychelles",
+  "region_count": 22
+ },
+ {
+  "adm0": "KAS",
+  "country": "Siachen Glacier",
+  "region_count": 1
+ },
+ {
+  "adm0": "SLE",
+  "country": "Sierra Leone",
+  "region_count": 4
+ },
+ {
+  "adm0": "SGP",
+  "country": "Singapore",
+  "region_count": 5
+ },
+ {
+  "adm0": "SVK",
+  "country": "Slovakia",
+  "region_count": 8
+ },
+ {
+  "adm0": "SVN",
+  "country": "Slovenia",
+  "region_count": 187
+ },
+ {
+  "adm0": "SLB",
+  "country": "Solomon Islands",
+  "region_count": 9
+ },
+ {
+  "adm0": "SOM",
+  "country": "Somalia",
+  "region_count": 13
+ },
+ {
+  "adm0": "SOL",
+  "country": "Somaliland",
+  "region_count": 1
+ },
+ {
+  "adm0": "ZAF",
+  "country": "South Africa",
+  "region_count": 9
+ },
+ {
+  "adm0": "SGS",
+  "country": "South Georgia and the Islands",
+  "region_count": 1
+ },
+ {
+  "adm0": "KOR",
+  "country": "South Korea",
+  "region_count": 17
+ },
+ {
+  "adm0": "ESP",
+  "country": "Spain",
+  "region_count": 50
+ },
+ {
+  "adm0": "LKA",
+  "country": "Sri Lanka",
+  "region_count": 25
+ },
+ {
+  "adm0": "SDN",
+  "country": "Sudan",
+  "region_count": 17
+ },
+ {
+  "adm0": "SUR",
+  "country": "Suriname",
+  "region_count": 10
+ },
+ {
+  "adm0": "SWZ",
+  "country": "Swaziland",
+  "region_count": 4
+ },
+ {
+  "adm0": "SWE",
+  "country": "Sweden",
+  "region_count": 21
+ },
+ {
+  "adm0": "CHE",
+  "country": "Switzerland",
+  "region_count": 26
+ },
+ {
+  "adm0": "SYR",
+  "country": "Syria",
+  "region_count": 15
+ },
+ {
+  "adm0": "TWN",
+  "country": "Taiwan",
+  "region_count": 19
+ },
+ {
+  "adm0": "TJK",
+  "country": "Tajikistan",
+  "region_count": 4
+ },
+ {
+  "adm0": "THA",
+  "country": "Thailand",
+  "region_count": 77
+ },
+ {
+  "adm0": "BHS",
+  "country": "The Bahamas",
+  "region_count": 21
+ },
+ {
+  "adm0": "TGO",
+  "country": "Togo",
+  "region_count": 5
+ },
+ {
+  "adm0": "TON",
+  "country": "Tonga",
+  "region_count": 2
+ },
+ {
+  "adm0": "TTO",
+  "country": "Trinidad and Tobago",
+  "region_count": 14
+ },
+ {
+  "adm0": "TUN",
+  "country": "Tunisia",
+  "region_count": 23
+ },
+ {
+  "adm0": "TUR",
+  "country": "Turkey",
+  "region_count": 81
+ },
+ {
+  "adm0": "TKM",
+  "country": "Turkmenistan",
+  "region_count": 5
+ },
+ {
+  "adm0": "TCA",
+  "country": "Turks and Caicos Islands",
+  "region_count": 2
+ },
+ {
+  "adm0": "UGA",
+  "country": "Uganda",
+  "region_count": 112
+ },
+ {
+  "adm0": "UKR",
+  "country": "Ukraine",
+  "region_count": 25
+ },
+ {
+  "adm0": "ARE",
+  "country": "United Arab Emirates",
+  "region_count": 9
+ },
+ {
+  "adm0": "GBR",
+  "country": "United Kingdom",
+  "region_count": 221
+ },
+ {
+  "adm0": "TZA",
+  "country": "United Republic of Tanzania",
+  "region_count": 30
+ },
+ {
+  "adm0": "VIR",
+  "country": "United States Virgin Islands",
+  "region_count": 1
+ },
+ {
+  "adm0": "USA",
+  "country": "United States of America",
+  "region_count": 51
+ },
+ {
+  "adm0": "URY",
+  "country": "Uruguay",
+  "region_count": 19
+ },
+ {
+  "adm0": "UZB",
+  "country": "Uzbekistan",
+  "region_count": 14
+ },
+ {
+  "adm0": "VUT",
+  "country": "Vanuatu",
+  "region_count": 6
+ },
+ {
+  "adm0": "VEN",
+  "country": "Venezuela",
+  "region_count": 24
+ },
+ {
+  "adm0": "VNM",
+  "country": "Vietnam",
+  "region_count": 63
+ },
+ {
+  "adm0": "SAH",
+  "country": "Western Sahara",
+  "region_count": 1
+ },
+ {
+  "adm0": "YEM",
+  "country": "Yemen",
+  "region_count": 21
+ },
+ {
+  "adm0": "ZMB",
+  "country": "Zambia",
+  "region_count": 10
+ },
+ {
+  "adm0": "ZWE",
+  "country": "Zimbabwe",
+  "region_count": 10
+ }
+]

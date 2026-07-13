@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>空想世界地図メーカー — Fantasy Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<style>
+  :root{
+    --paper-2:#ddc998;
+    --ink:#2b1d10;
+    --ink-soft:#5a4326;
+    --sea:#9fb2a9;
+    --sea-deep:#87a097;
+    --panel:#f2e8cc;
+    --shadow: 0 2px 10px rgba(43,29,16,.25);
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%; margin:0;}
+  body{
+    font-family:'Spectral', serif;
+    color:var(--ink);
+    background:var(--sea);
+    overflow:hidden;
+  }
+  header{
+    display:flex; align-items:baseline; gap:14px;
+    padding:12px 20px;
+    background:linear-gradient(180deg, var(--panel), var(--paper-2));
+    border-bottom:3px double var(--ink-soft);
+    box-shadow:var(--shadow);
+    position:relative; z-index:10;
+  }
+  header h1{
+    font-family:'Cinzel', serif; font-weight:700; font-size:19px;
+    letter-spacing:.06em; margin:0; color:var(--ink);
+  }
+  header .subtitle{
+    font-style:italic; color:var(--ink-soft); font-size:13.5px;
+  }
+  #mapWrap{
+    position:relative;
+    height:calc(100vh - 52px);
+    overflow:hidden;
+    background:
+      repeating-linear-gradient(0deg, transparent 0 39px, rgba(43,29,16,.035) 39px 40px),
+      repeating-linear-gradient(90deg, transparent 0 39px, rgba(43,29,16,.035) 39px 40px),
+      var(--sea);
+  }
+  #frame{
+    position:absolute; inset:14px;
+    border:2px solid var(--ink-soft);
+    outline:1px solid var(--ink-soft); outline-offset:5px;
+    pointer-events:none; z-index:5;
+  }
+  svg#map{ width:100%; height:100%; display:block; }
+  path.region{
+    stroke:var(--ink-soft); stroke-width:.35;
+    fill:var(--paper-2);
+    vector-effect:non-scaling-stroke;
+  }
+  .graticule{ fill:none; stroke:var(--sea-deep); stroke-width:.5; opacity:.5; }
+  .sphere-outline{ fill:none; stroke:var(--ink-soft); stroke-width:1.2; }
+  #freehandLayer polygon{ stroke:var(--ink); stroke-width:.8; opacity:.82; stroke-linejoin:round; }
+
+  #tooltip{
+    position:fixed; z-index:100; pointer-events:none;
+    background:var(--panel); border:1px solid var(--ink-soft);
+    padding:5px 9px; font-size:12px; box-shadow:var(--shadow);
+    display:none; font-family:'IBM Plex Mono', monospace; color:var(--ink);
+  }
+  #tooltip b{ display:block; font-family:'Spectral',serif; font-size:13px; font-weight:600; }
+
+  #legend{
+    position:absolute; left:26px; bottom:22px; z-index:6;
+    background:var(--panel); border:1px solid var(--ink-soft);
+    padding:10px 14px; box-shadow:var(--shadow); max-width:280px;
+    display:none;
+  }
+  #legend h2{
+    font-family:'Cinzel', serif; font-size:11px; letter-spacing:.06em;
+    margin:0 0 6px; color:var(--ink-soft);
+  }
+  .legendItem{ display:flex; align-items:center; gap:7px; font-size:12.5px; margin:3px 0; }
+  .legendItem .chip{ width:14px; height:14px; border:1px solid var(--ink-soft); flex:none; }
+
+  #compass{ position:absolute; right:26px; bottom:24px; width:78px; height:78px; opacity:.5; z-index:4; }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="titleField"></h1>
+  <span class="subtitle" id="subtitleField"></span>
+</header>
+
+<div id="mapWrap">
+  <svg id="map"></svg>
+  <div id="frame"></div>
+  <div id="legend"><h2>凡例</h2><div id="legendList"></div></div>
+  <svg id="compass" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="46" fill="none" stroke="#2b1d10" stroke-width="1.2"/>
+    <circle cx="50" cy="50" r="38" fill="none" stroke="#2b1d10" stroke-width=".6"/>
+    <g stroke="#2b1d10" stroke-width="1">
+      <polygon points="50,6 56,50 50,44 44,50" fill="#8b2e2e"/>
+      <polygon points="50,94 56,50 50,56 44,50" fill="#2b1d10"/>
+      <polygon points="6,50 50,44 44,50 50,56" fill="#2b1d10"/>
+      <polygon points="94,50 50,44 56,50 50,56" fill="#2b1d10"/>
+    </g>
+    <text x="50" y="16" text-anchor="middle" font-size="9" font-family="Cinzel,serif" fill="#2b1d10">N</text>
+  </svg>
+</div>
+
+<div id="tooltip"></div>
+
+<script>
+/* =====================================================================
+   ▼▼▼ 設定ゾーン(ここだけ書き換えて再デプロイすれば地図が塗られた状態で
+   表示される。UIはこの設定を表示するだけのビューアー) ▼▼▼
+
+   REGION_COLORS : 州・省単位で塗る。キーは region-index.json の "id"
+                   (例 "US-CA"=カリフォルニア, "IN-MH"=マハーラーシュトラ)
+   COUNTRY_COLORS: 国単位でまとめて塗る。キーは adm0 (ISO 3166-1 alpha-3)
+                   (例 "GBR"=イギリス, "IND"=インド, "CAN"=カナダ)
+                   ※ REGION_COLORS の指定がある州はそちらが優先
+   FREEHAND_SHAPES: 行政境界を無視して自由な形を塗りたい時(空想の国境線など)
+                   points は [経度, 緯度] の配列
+   LEGEND_LABELS  : 色 → 凡例に出す名前
+   ===================================================================== */
+const MAP_TITLE    = "空想世界地図メーカー";
+const MAP_SUBTITLE = "";
+
+const REGION_COLORS = {
+  // "US-CA": "#8b2e2e",
+};
+
+const COUNTRY_COLORS = {
+  // "GBR": "#8b2e2e",
+  // "IND": "#8b2e2e",
+  // "CAN": "#8b2e2e",
+  // "AUS": "#8b2e2e",
+};
+
+const FREEHAND_SHAPES = [
+  // { color: "#5b4b8a", label: "幻の王国", points: [[139.0,36.0],[141.0,36.5],[140.5,38.0]] }
+];
+
+const LEGEND_LABELS = {
+  // "#8b2e2e": "大英帝国 最大版図(1920年)"
+};
+/* ▲▲▲ 設定ゾーンここまで。これより下は描画ロジック(通常は編集不要) ▲▲▲ */
+
+document.getElementById('titleField').textContent = MAP_TITLE;
+document.getElementById('subtitleField').textContent = MAP_SUBTITLE;
+
+const svg = d3.select('#map');
+const gGraticule = svg.append('g');
+const gRegions = svg.append('g');
+const gFreehand = svg.append('g').attr('id','freehandLayer');
+
+function sizeSvg(){
+  const wrap = document.getElementById('mapWrap');
+  const w = wrap.clientWidth, h = wrap.clientHeight;
+  svg.attr('viewBox', [0,0,w,h].join(' '));
+  return [w,h];
+}
+
+d3.json('regions.topo.json').then(topo=>{
+  const [width, height] = sizeSvg();
+  const objKey = Object.keys(topo.objects)[0];
+  const fc = topojson.feature(topo, topo.objects[objKey]);
+
+  const projection = d3.geoNaturalEarth1().fitSize([width-20, height-20], fc);
+  const path = d3.geoPath(projection);
+
+  gGraticule.append('path').datum(d3.geoGraticule10()).attr('class','graticule').attr('d', path);
+  gGraticule.append('path').datum({type:'Sphere'}).attr('class','sphere-outline').attr('d', path);
+
+  gRegions.selectAll('path.region')
+    .data(fc.features)
+    .join('path')
+    .attr('class','region')
+    .attr('d', path)
+    .attr('fill', d=>{
+      if(REGION_COLORS[d.id]) return REGION_COLORS[d.id];
+      if(COUNTRY_COLORS[d.properties.adm0]) return COUNTRY_COLORS[d.properties.adm0];
+      return null;
+    })
+    .on('mousemove', (ev,d)=> showTip(ev,d))
+    .on('mouseleave', hideTip);
+
+  FREEHAND_SHAPES.forEach(shape=>{
+    const pts = shape.points.map(p=>{
+      const xy = projection(p); return xy ? xy.join(',') : null;
+    }).filter(Boolean).join(' ');
+    gFreehand.append('polygon').attr('points', pts).attr('fill', shape.color).attr('opacity', .82);
+  });
+
+  renderLegend();
+});
+
+function showTip(ev,d){
+  const tip = document.getElementById('tooltip');
+  tip.style.display='block';
+  tip.style.left = (ev.clientX+14)+'px';
+  tip.style.top = (ev.clientY+12)+'px';
+  tip.innerHTML = `<b>${d.properties.name}</b>${d.properties.admin} <span style="opacity:.6">/ ${d.id}</span>`;
+}
+function hideTip(){ document.getElementById('tooltip').style.display='none'; }
+
+function renderLegend(){
+  const colors = new Set();
+  Object.values(REGION_COLORS).forEach(c=>colors.add(c));
+  Object.values(COUNTRY_COLORS).forEach(c=>colors.add(c));
+  FREEHAND_SHAPES.forEach(s=>colors.add(s.color));
+  if(!colors.size) return;
+  const list = document.getElementById('legendList');
+  list.innerHTML='';
+  [...colors].forEach(c=>{
+    const row = document.createElement('div'); row.className='legendItem';
+    row.innerHTML = `<div class="chip" style="background:${c}"></div><span>${LEGEND_LABELS[c] || c}</span>`;
+    list.appendChild(row);
+  });
+  document.getElementById('legend').style.display='block';
+}
+
+window.addEventListener('resize', ()=> location.reload());
+</script>
+</body>
+</html>
