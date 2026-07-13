@@ -98,26 +98,42 @@
                    points は [経度, 緯度] の配列
    LEGEND_LABELS  : 色 → 凡例に出す名前
    ===================================================================== */
-const MAP_TITLE    = "空想世界地図メーカー";
-const MAP_SUBTITLE = "";
+const MAP_TITLE    = "大英帝国";
+const MAP_SUBTITLE = "最大版図(1920年頃・ヴェルサイユ条約後の委任統治領を含む)";
 
 const REGION_COLORS = {
-  // "US-CA": "#8b2e2e",
 };
 
 const COUNTRY_COLORS = {
-  // "GBR": "#8b2e2e",
-  // "IND": "#8b2e2e",
-  // "CAN": "#8b2e2e",
-  // "AUS": "#8b2e2e",
+  // 本国・自治領(ドミニオン)
+  "GBR": "#a11d2e", "IRL": "#a11d2e",
+  "CAN": "#a11d2e", "AUS": "#a11d2e", "NZL": "#a11d2e", "ZAF": "#a11d2e", "NAM": "#a11d2e",
+  // 英領インド帝国
+  "IND": "#a11d2e", "PAK": "#a11d2e", "BGD": "#a11d2e", "MMR": "#a11d2e", "LKA": "#a11d2e",
+  // 中東(委任統治領・保護国)
+  "EGY": "#a11d2e", "SDN": "#a11d2e", "SDS": "#a11d2e", "IRQ": "#a11d2e", "JOR": "#a11d2e",
+  "ISR": "#a11d2e", "PSX": "#a11d2e", "YEM": "#a11d2e", "KWT": "#a11d2e", "BHR": "#a11d2e",
+  "QAT": "#a11d2e", "ARE": "#a11d2e", "OMN": "#a11d2e", "CYP": "#a11d2e",
+  // アフリカ
+  "NGA": "#a11d2e", "GHA": "#a11d2e", "SLE": "#a11d2e", "GMB": "#a11d2e", "KEN": "#a11d2e",
+  "UGA": "#a11d2e", "TZA": "#a11d2e", "ZMB": "#a11d2e", "ZWE": "#a11d2e", "MWI": "#a11d2e",
+  "BWA": "#a11d2e", "LSO": "#a11d2e", "SWZ": "#a11d2e", "MUS": "#a11d2e", "SYC": "#a11d2e",
+  "CMR": "#a11d2e", "TGO": "#a11d2e", "SOM": "#a11d2e",
+  // カリブ海・中南米
+  "BLZ": "#a11d2e", "GUY": "#a11d2e", "JAM": "#a11d2e", "BHS": "#a11d2e", "TTO": "#a11d2e",
+  "BRB": "#a11d2e", "GRD": "#a11d2e", "LCA": "#a11d2e", "VCT": "#a11d2e", "ATG": "#a11d2e",
+  "KNA": "#a11d2e", "DMA": "#a11d2e", "BMU": "#a11d2e",
+  // 地中海・東南アジア・太平洋
+  "MLT": "#a11d2e", "HKG": "#a11d2e", "MYS": "#a11d2e", "SGP": "#a11d2e", "BRN": "#a11d2e",
+  "PNG": "#a11d2e", "SLB": "#a11d2e", "FJI": "#a11d2e", "TON": "#a11d2e", "KIR": "#a11d2e",
+  "VUT": "#a11d2e", "WSM": "#a11d2e", "NRU": "#a11d2e"
 };
 
 const FREEHAND_SHAPES = [
-  // { color: "#5b4b8a", label: "幻の王国", points: [[139.0,36.0],[141.0,36.5],[140.5,38.0]] }
 ];
 
 const LEGEND_LABELS = {
-  // "#8b2e2e": "大英帝国 最大版図(1920年)"
+  "#a11d2e": "大英帝国 最大版図(1920年頃)"
 };
 /* ▲▲▲ 設定ゾーンここまで。これより下は描画ロジック(通常は編集不要) ▲▲▲ */
 
